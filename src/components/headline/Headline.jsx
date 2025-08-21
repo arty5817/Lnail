@@ -1,9 +1,9 @@
-"use client"
+"use client";
+
 import React from 'react';
 import styles from './headline.module.scss';
 import CustomButton from "@/components/CustomButton/CustomButton";
 import { TypeAnimation } from 'react-type-animation';
-import {router} from "next/client";
 import Link from "next/link";
 
 const Headline = () => {
@@ -32,10 +32,9 @@ const Headline = () => {
                     cursor={true}
                 />
                 <br/>
-                <Link href={"../about"}>
-                    <CustomButton camel >Next to see</CustomButton>
+                <Link href="/about">
+                    <CustomButton camel>Next to see</CustomButton>
                 </Link>
-                {/*<button onClick(){router.push('/about')}></button>*/}
             </div>
         </div>
     );

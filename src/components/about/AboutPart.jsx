@@ -1,5 +1,7 @@
+"use client";
+
 import React from 'react';
-import styles from './aboutpart.module.scss'
+import styles from './aboutpart.module.scss';
 
 const AboutPart = () => {
     return (

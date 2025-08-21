@@ -1,10 +1,11 @@
-'use client'
-import React from "react"
-import { useKeenSlider } from "keen-slider/react"
-import "keen-slider/keen-slider.min.css"
-import "./carousel.scss"
+"use client";
 
-export default () => {
+import React from "react";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
+import "./carousel.scss";
+
+const Carousel = () => {
     const [sliderRef] = useKeenSlider({
         loop: true,
         autoplay: true,
@@ -15,18 +16,16 @@ export default () => {
                     perView: 1,
                     spacing: 15,
                 },
-            }
             },
+        },
         slides: {
             perView: 3,
             spacing: 15,
         },
-
-
-    })
+    });
 
     return (
-        <div className={'carousel'}>
+        <div className="carousel">
             <div ref={sliderRef} className="keen-slider">
                 <div className="keen-slider__slide number-slide1"></div>
                 <div className="keen-slider__slide number-slide2"></div>
@@ -36,6 +35,7 @@ export default () => {
                 <div className="keen-slider__slide number-slide6"></div>
             </div>
         </div>
+    );
+};
 
-    )
-}
+export default Carousel;

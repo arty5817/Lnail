@@ -1,13 +1,12 @@
+"use client";
+
 import React from 'react';
-import styles from './services.module.scss'
+import styles from './services.module.scss';
 import ServiceChart from "@/components/services/serviceChart";
-import manicure from '../../../public/Icon-Nail-03.png'
-import pedicure from '../../../public/Icon-Nail-04.png'
-import nailart from '../../../public/Icon-Nail-01.png'
-import removal from '../../../public/Icon-Nail-02.png'
-import CustomButton from "@/components/CustomButton/CustomButton";
-
-
+import manicure from '../../../public/Icon-Nail-03.png';
+import pedicure from '../../../public/Icon-Nail-04.png';
+import nailart from '../../../public/Icon-Nail-01.png';
+import removal from '../../../public/Icon-Nail-02.png';
 
 const ServicesPart = () => {
     return (
@@ -20,12 +19,12 @@ const ServicesPart = () => {
                 </div>
             </div>
             <div className={styles.chartMain}>
-                <ServiceChart title={'Manicure'} icon={manicure}/>
-                <ServiceChart title={'Pedicure'} icon={pedicure}/>
-                <ServiceChart title={'Nail Enhancement'} icon={nailart}/>
-                <ServiceChart title={'Nail Art'} icon={removal}/>
-                <ServiceChart title={'Removal'} icon={manicure}/>
-                <ServiceChart title={'More Services'} icon={manicure}/>
+                <ServiceChart title={'Manicure'} icon={manicure} />
+                <ServiceChart title={'Pedicure'} icon={pedicure} />
+                <ServiceChart title={'Nail Enhancement'} icon={nailart} />
+                <ServiceChart title={'Nail Art'} icon={removal} />
+                <ServiceChart title={'Removal'} icon={manicure} />
+                <ServiceChart title={'More Services'} icon={manicure} />
             </div>
         </div>
     );
