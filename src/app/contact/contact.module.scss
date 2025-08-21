@@ -1,0 +1,36 @@
+@import "../../app/mixins";
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 100px 0;
+  @include useMobile{
+    flex-direction: column;
+    align-items: center;
+  }
+  .img{
+
+  }
+  .textContainer{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    @include useMobile{
+      width: 80%;
+    }
+    h1{
+      color: #ff8fab;
+    }
+    p{
+      padding: 30px;
+    }
+    button{
+      padding: 30px 30px;
+    }
+
+  }
+}

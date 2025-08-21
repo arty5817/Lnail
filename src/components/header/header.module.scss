@@ -1,0 +1,82 @@
+@import "../../app/mixins.scss";
+$primary: #ff8fab;
+
+
+.container {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 20px -2px $primary;
+  padding: 0 50px;
+  background-color: #ffc8dd;
+  z-index: 999;
+  @include useMobile {
+    padding: 0;
+  }
+}
+.logo {
+  width: 100px;
+  height: inherit;
+  font-weight: bold;
+  font-size: 22px;
+  .img {
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+  }
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  text-decoration: none;
+
+  .link {
+    text-decoration: none;
+    color: #000;
+    &:hover {
+      color: $primary;
+
+    }
+  }
+  .active {
+    color: $primary;
+    text-decoration: none;
+
+  }
+}
+.mobileNav {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.mobileLink {
+  width: 100%;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.mobileActive {
+  color: $primary;
+  text-transform: uppercase;
+  padding: 10px 30px;
+}
+.menuHead {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  button {
+    color: $primary;
+  }
+}
+.menuItems {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+}

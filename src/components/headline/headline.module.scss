@@ -1,0 +1,33 @@
+$primary: #ffe5ec;
+
+
+.container{
+  font-size: 33px;
+  background-image: url("../../../public/pink-marble-nails.jpg");
+  //background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .main{
+    width: 80%;
+    margin: 0 auto;
+    padding: 300px 50px;
+    p{
+      font-family: "Montserrat", sans-serif;
+      color: $primary;
+    }
+    .number{
+      color: #000;
+    }
+    h1{
+      font-family: "Montserrat", sans-serif;
+      padding: 50px 0px;
+    }
+    button{
+      padding: 30px 30px;
+      font-size: 16px;
+      background-color: #ff98c3;
+
+    }
+  }
+
+}

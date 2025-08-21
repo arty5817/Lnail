@@ -1,0 +1,50 @@
+$primary: #fff;
+@import "../../app/mixins.scss";
+
+.about{
+  display: flex;
+  flex-direction: column;
+  background-color: $primary;
+  margin: auto;
+
+  .content{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    @include useMobile {
+      flex-direction: column;
+      margin: 50px auto;
+    }
+    .imgContainer{
+      width: 50%;
+      background-color: $primary;
+      background-image: url("../../../public/img/att.O9eappmMQOXjgAEQ7RdiaFG_oVvwdORnVtoup1VRQ5Y.JPG");
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include useMobile {
+        width: 80%;
+      }
+      img{
+        margin: auto;
+
+      }
+    }
+    .contentText{
+      background-color: #ffffff;
+      margin: auto;
+      width: 50%;
+      @include useMobile {
+        width: 80%;
+      }
+      h1{
+        padding: 30px;
+      }
+      p{
+        padding: 30px;
+      }
+    }
+  }
+}
